@@ -131,35 +131,35 @@ end TCL_Generic;&#13;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(1130,290)" to="(1130,310)"/>
+    <wire from="(110,110)" to="(170,110)"/>
+    <wire from="(850,220)" to="(850,230)"/>
     <wire from="(1380,930)" to="(1490,930)"/>
     <wire from="(860,220)" to="(860,230)"/>
     <wire from="(90,990)" to="(90,1000)"/>
     <wire from="(1380,910)" to="(1420,910)"/>
-    <wire from="(820,220)" to="(820,240)"/>
-    <wire from="(60,900)" to="(160,900)"/>
-    <wire from="(840,250)" to="(860,250)"/>
-    <wire from="(1380,880)" to="(1460,880)"/>
-    <wire from="(1380,860)" to="(1460,860)"/>
-    <wire from="(860,220)" to="(890,220)"/>
-    <wire from="(830,250)" to="(840,250)"/>
-    <wire from="(1330,850)" to="(1330,890)"/>
-    <wire from="(110,110)" to="(170,110)"/>
-    <wire from="(850,220)" to="(850,230)"/>
     <wire from="(970,260)" to="(970,290)"/>
     <wire from="(60,900)" to="(60,980)"/>
     <wire from="(1380,900)" to="(1440,900)"/>
+    <wire from="(820,220)" to="(820,240)"/>
     <wire from="(1200,130)" to="(1200,140)"/>
     <wire from="(1380,990)" to="(1430,990)"/>
+    <wire from="(60,900)" to="(160,900)"/>
+    <wire from="(840,250)" to="(860,250)"/>
     <wire from="(130,860)" to="(160,860)"/>
+    <wire from="(1380,880)" to="(1460,880)"/>
+    <wire from="(1380,860)" to="(1460,860)"/>
     <wire from="(1380,970)" to="(1460,970)"/>
     <wire from="(1380,950)" to="(1460,950)"/>
     <wire from="(1120,310)" to="(1130,310)"/>
     <wire from="(970,290)" to="(1130,290)"/>
+    <wire from="(860,220)" to="(890,220)"/>
     <wire from="(1330,840)" to="(1360,840)"/>
     <wire from="(90,1000)" to="(100,1000)"/>
     <wire from="(1310,890)" to="(1330,890)"/>
     <wire from="(970,260)" to="(980,260)"/>
+    <wire from="(830,250)" to="(840,250)"/>
     <wire from="(810,220)" to="(820,220)"/>
+    <wire from="(1330,850)" to="(1330,890)"/>
     <comp lib="0" loc="(170,150)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="JMPACUEQU"/>
@@ -788,7 +788,9 @@ end TCL_Generic;&#13;
     <comp lib="4" loc="(1200,130)" name="ROM">
       <a name="dataWidth" val="12"/>
       <a name="contents">addr/data: 8 12
-f20 f60 100 1e0
+f20 f60 a00 f20 b00 f70 160 d30
+710 900 d00 208 4*0 d40 130 100
+1e0
 </a>
     </comp>
     <comp lib="0" loc="(1200,130)" name="Tunnel">
@@ -1588,12 +1590,12 @@ f20 f60 100 1e0
       <rect height="3" stroke="none" width="10" x="220" y="59"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="64">WriteEnable</text>
       <rect height="4" stroke="none" width="10" x="220" y="78"/>
-      <circ-port height="10" pin="500,100" width="10" x="225" y="55"/>
       <circ-port height="8" pin="160,360" width="8" x="46" y="116"/>
+      <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="84">OutputEnable</text>
+      <circ-port height="10" pin="500,130" width="10" x="225" y="75"/>
+      <circ-port height="10" pin="500,100" width="10" x="225" y="55"/>
       <circ-port height="8" pin="160,160" width="8" x="46" y="96"/>
       <circ-port height="8" pin="160,100" width="8" x="46" y="56"/>
-      <circ-port height="10" pin="500,130" width="10" x="225" y="75"/>
-      <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="215" y="84">OutputEnable</text>
       <rect height="20" stroke="none" width="160" x="60" y="130"/>
       <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="160" x="60" y="50"/>
       <text fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="140" y="144">Save_Load</text>
@@ -1677,24 +1679,28 @@ f20 f60 100 1e0
     <wire from="(280,230)" to="(280,240)"/>
     <wire from="(310,430)" to="(620,430)"/>
     <wire from="(270,240)" to="(270,260)"/>
-    <wire from="(320,360)" to="(320,510)"/>
     <wire from="(300,280)" to="(300,490)"/>
     <wire from="(260,190)" to="(550,190)"/>
     <wire from="(200,160)" to="(240,160)"/>
     <wire from="(230,140)" to="(230,170)"/>
     <wire from="(620,430)" to="(620,450)"/>
     <wire from="(310,340)" to="(310,430)"/>
+    <wire from="(320,410)" to="(320,510)"/>
     <wire from="(300,280)" to="(330,280)"/>
     <wire from="(260,230)" to="(280,230)"/>
     <wire from="(180,320)" to="(330,320)"/>
     <wire from="(310,340)" to="(330,340)"/>
     <wire from="(390,240)" to="(410,240)"/>
+    <wire from="(620,430)" to="(650,430)"/>
     <wire from="(390,320)" to="(400,320)"/>
     <wire from="(260,240)" to="(270,240)"/>
     <wire from="(320,360)" to="(330,360)"/>
+    <wire from="(320,410)" to="(650,410)"/>
     <wire from="(180,360)" to="(320,360)"/>
     <wire from="(320,510)" to="(590,510)"/>
+    <wire from="(320,360)" to="(320,410)"/>
     <wire from="(300,490)" to="(560,490)"/>
+    <wire from="(680,420)" to="(690,420)"/>
     <wire from="(420,320)" to="(620,320)"/>
     <wire from="(550,450)" to="(560,450)"/>
     <comp lib="0" loc="(180,140)" name="Pin">
@@ -1728,12 +1734,6 @@ f20 f60 100 1e0
     <comp lib="0" loc="(180,490)" name="Pin">
       <a name="label" val="Clk"/>
     </comp>
-    <comp lib="0" loc="(620,450)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="HALT"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="4" loc="(570,440)" name="S-R Flip-Flop">
       <a name="trigger" val="falling"/>
     </comp>
@@ -1755,6 +1755,15 @@ f20 f60 100 1e0
     </comp>
     <comp lib="0" loc="(560,470)" name="Constant">
       <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(690,420)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="HALT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(680,420)" name="OR Gate">
+      <a name="size" val="30"/>
     </comp>
   </circuit>
 </project>
